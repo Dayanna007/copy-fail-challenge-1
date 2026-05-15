@@ -353,7 +353,7 @@ git push origin main --tags
 
 ---
 
-## Preguntas frecuentes
+## PreguntCas frecuentes
 
 **¿Puedo usar IA?** Sí. Pero la evidencia debe venir de TU VM con TU STUDENT_ID.
 
