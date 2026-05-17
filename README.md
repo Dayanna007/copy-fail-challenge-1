@@ -66,6 +66,9 @@ copy-fail-challenge/
 ## Recursos
 
 
+
+
+
 - Write-up técnico: https://xint.io/blog/copy-fail-linux-distributions
 - Sitio oficial del CVE: https://copy.fail/
 - PoC público: https://github.com/theori-io/copy-fail-CVE-2026-31431
