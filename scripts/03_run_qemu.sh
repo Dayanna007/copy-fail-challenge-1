@@ -32,7 +32,7 @@ if [ ! -f "$INITRAMFS" ]; then
   echo -e "${RED}Error: $INITRAMFS no existe. Ejecuta primero: make rootfs${NC}"
   exit 1
 fi
-
+cd /workspaces/copy-fail-challenge-1
 echo -e "${GREEN}╔══════════════════════════════════════════════════════════════╗${NC}"
 echo -e "${GREEN}║  Arrancando VM vulnerable — CVE-2026-31431                  ║${NC}"
 echo -e "${GREEN}║  Salir de QEMU: Ctrl+A  luego  X                           ║${NC}"

@@ -33,7 +33,7 @@ copy-fail-challenge/
 ├── .devcontainer/          ← Configuración del devcontainer (Ubuntu + QEMU)
 │   ├── devcontainer.json
 │   └── Dockerfile
-├── .github/workflows/
+├── .github/workflows/  
 │   └── grade.yml           ← Autocalificador de GitHub Actions
 ├── evidence/               ← TUS ARCHIVOS DE EVIDENCIA VAN AQUÍ
 │   └── README.md
@@ -64,6 +64,7 @@ copy-fail-challenge/
 | B | `REPORT.md`: explicación técnica con conexión a conceptos del curso | 0.5 |
 
 ## Recursos
+
 
 - Write-up técnico: https://xint.io/blog/copy-fail-linux-distributions
 - Sitio oficial del CVE: https://copy.fail/
