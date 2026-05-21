@@ -1,6 +1,6 @@
 # Copy Fail — CVE-2026-31431 Lab
 ## Introducción a UNIX · UIDE · Evaluación Parcial 2 → 9 puntos.
-
+.
 [![Autocalificación](https://github.com/DOCENTE_REPO/copy-fail-challenge/actions/workflows/grade.yml/badge.svg)](https://github.com/DOCENTE_REPO/copy-fail-challenge/actions/workflows/grade.yml)
 
 ---
