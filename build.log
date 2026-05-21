@@ -1,0 +1,64 @@
+[1;36m[1/5] Clonando kernel v6.12 (solo último commit)...[0m
+[1;33m  → Fuentes ya presentes, omitiendo clone.[0m
+
+[1;36m[2/5] Guardando hash del commit vulnerable (evidencia)...[0m
+  Hash: adc218676eef25575469234709c2d87185ca223a
+
+[1;36m[3/5] Configurando el kernel (tiny + algif_aead habilitado)...[0m
+make[1]: Entering directory '/workspaces/copy-fail-challenge-1/kernel/linux'
+  LEX     scripts/kconfig/lexer.lex.c
+  YACC    scripts/kconfig/parser.tab.[ch]
+  HOSTCC  scripts/kconfig/lexer.lex.o
+  HOSTCC  scripts/kconfig/menu.o
+  HOSTCC  scripts/kconfig/parser.tab.o
+  HOSTCC  scripts/kconfig/preprocess.o
+  HOSTCC  scripts/kconfig/symbol.o
+  HOSTCC  scripts/kconfig/util.o
+  HOSTLD  scripts/kconfig/conf
+#
+# configuration written to .config
+#
+Using .config as base
+Merging ./kernel/configs/tiny.config
+Value of CONFIG_CC_OPTIMIZE_FOR_SIZE is redefined by fragment ./kernel/configs/tiny.config:
+Previous value: # CONFIG_CC_OPTIMIZE_FOR_SIZE is not set
+New value: CONFIG_CC_OPTIMIZE_FOR_SIZE=y
+
+Value of CONFIG_KERNEL_XZ is redefined by fragment ./kernel/configs/tiny.config:
+Previous value: # CONFIG_KERNEL_XZ is not set
+New value: CONFIG_KERNEL_XZ=y
+
+Value of CONFIG_SLUB_TINY is redefined by fragment ./kernel/configs/tiny.config:
+Previous value: # CONFIG_SLUB_TINY is not set
+New value: CONFIG_SLUB_TINY=y
+
+Merging ./arch/x86/configs/tiny.config
+Value of CONFIG_NOHIGHMEM is redefined by fragment ./arch/x86/configs/tiny.config:
+Previous value: # CONFIG_NOHIGHMEM is not set
+New value: CONFIG_NOHIGHMEM=y
+
+Value of CONFIG_UNWINDER_GUESS is redefined by fragment ./arch/x86/configs/tiny.config:
+Previous value: # CONFIG_UNWINDER_GUESS is not set
+New value: CONFIG_UNWINDER_GUESS=y
+
+#
+# merged configuration written to .config (needs make)
+#
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/workspaces/copy-fail-challenge-1/kernel/linux'
+make[1]: Entering directory '/workspaces/copy-fail-challenge-1/kernel/linux'
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/workspaces/copy-fail-challenge-1/kernel/linux'
+
+[1;36m[4/5] Compilando kernel con 2 cores (esto toma ~15-25 min)...[0m
+[1;33m  Tip: puedes abrir otra terminal y leer el write-up mientras compila.[0m
+  HOSTCC  arch/x86/tools/relocs_64.o
+  HOSTCC  arch/x86/tools/relocs_common.o
+  HOSTLD  arch/x86/tools/relocs
+make[1]: *** [Makefile:224: __sub-make] Error 2
+make[1]: Leaving directory '/workspaces/copy-fail-challenge-1/kernel/linux'
+make: *** [Makefile:71: kernel] Error 2
