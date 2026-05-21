@@ -1,0 +1,7 @@
+=== HITO 4: PARCHE APLICADO ===
+Fecha: Thu May 21 03:45:05 UTC 2026
+Kernel parcheado: bzImage_patched compilado exitosamente
+Archivo parcheado: crypto/algif_aead.c
+Funcion corregida: _aead_recvmsg()
+Fix: aead_request_set_crypt usa areq->tsgl como src (separado del dst)
+Identidad: uid=1001(student) - exploit fallo, NO se obtuvo root
