@@ -61,3 +61,4 @@ cp arch/x86/boot/bzImage /workspaces/copy-fail-challenge-1/kernel/build/bzImage_
 git add . # agrega todos los cambios al área de preparación
 git commit -m "hito completado" # guarda los cambios realizados en Git
 git push # sube todos los cambios al repositorio de GitHub
+
