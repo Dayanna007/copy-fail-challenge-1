@@ -1,6 +1,1 @@
-=== HITO 2: EXPLOIT EXITOSO ===
-Fecha: Thu May 21 03:35:53 UTC 2026
-Hostname: copy-fail-Dayanna-Gaguancela
-Identidad POST-exploit: uid=0(root) gid=1001(student) groups=1001(student)
-Kernel: 6.12.0
-SHA256 del exploit: 76ad71ac3cf6d50bf4038048b9832df5e9aa63b85865c02ad1dd91cb2fdaef4b  /workspaces/copy-fail-challenge-1/copy_fail_exp.py
+uid=0(root) gid=0(root) groups=0(root)
